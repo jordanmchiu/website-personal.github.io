@@ -3,15 +3,14 @@
 <html lang="en">
  <head>
 
-   <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-      <!-- OPTIONAL: description -->
-      <meta name="description" content="Personal website">
-      <!-- OPTIONAL: author -->
-      <meta name="author" content="Jordan Chiu">
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="apple-touch-icon" href="icon.png" />
-   <title>Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <!-- OPTIONAL: description -->
+  <meta name="description" content="Personal website">
+  <!-- OPTIONAL: author -->
+  <meta name="author" content="Jordan Chiu">
+  <meta name="copyright" content="2018 Jordan Chiu">
+  <title>Website</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -27,14 +26,35 @@
     <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
     <link href='https://fonts.googleapis.com/css?family=Lora|Oswald' rel='stylesheet' type='text/css'>
 
+
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+    <!-- Load jQuery before other js files -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
  </head>
  <body>
+
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
 
    <div class="header" id="headerwrap">
      <div class="container">
@@ -49,19 +69,58 @@
      </div><!--/.container-->
    </div><!--/.#headerwrap-->
 
+    <!-- Navigation start -->
+    <!--
+  <header class="header">
+
+    <nav class="navbar navbar-custom" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">Alfred Sin</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="custom-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+  -->
+  <!-- Navigation end -->
+
 
    <section id="about" name="about"></section>
      <div class="about">
        <div class="container">
          <div class="row"> 
-           <div class="col-lg-2 col-lg-offset-1">
-             <h4>ABOUT</h4>
+           <div class="col-lg-12 centered">
+             <h2>ABOUT</h2>
            </div>
-           <div class="col-lg-6">
-    <p>Lorem ipsum</p>
-    </div>
+           <br/>
+           <div class="col-lg-8 col-lg-offset-1">
+            <p>Hello!  I'm a student pursuing a second degree in Computer Science.  My goal is to integrate my skills in software development with my first passion, health sciences.<br/><br/>
+            I live in Vancouver, BC, which means that I'm used to the rain, I love watching hockey, and I enjoy spending my time outdoors... when I'm not confined to the indoors by said rain.</p>
+           </div>
            <div class="col-lg-3">
-             <p><a href="my-resume.pdf"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
+             <p><a href="assets/files/Resume.pdf"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
            </div>
      
          </div><!--/.row-->
@@ -70,325 +129,335 @@
 
 
   <section id="resume" name="resume"></section>
-    <!-- EDUCATION SECTION -->
-    <div class="container desc animated fadeInUp">
-      <div class="row">
+  <!-- EDUCATION SECTION -->
+  <div class="container desc animated fadeInUp">
+    <div class="row">
 
-          <div class="col-lg-1 col-lg-offset-1">
-            <h4>EDUCATION</h4>
-          </div>
-          <!-- EDIT: education line 1 -->
-          <div class="col-lg-2">
-            <img src="images/UBC.png" alt="UBC" width="130">
-          </div>
-          <div class="col-lg-5">
-            <p><t>Bachelor of Computer Science</t><br/>
-              University of British Columbia
-              <!--<br/><i>Extra info here</i>-->
-            </p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>Expected MAY 2020</sm><br/>
-            <imp><sm>IN PROGRESS</sm></imp>
-            </p>
-          </div>
-    
-          <!-- EDIT: education line 2 -->
-          <div class="col-lg-5">
-            <p><t>BSc. Microbiology & Immunology </t><br/>
-               University of British Columbia
-              <!--<br/><i>Extra info here</i>-->
-            </p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>MAY 2017</sm></p>
-          </div>
-    
-      </div><!--/.row -->
-      <br>
-      <hr>
-    </div><!--/Education container -->
+        <div class="col-lg-12 centered">
+          <h2>EDUCATION</h2>
+        </div>
+        <br/>
+        <!-- EDIT: education line 1 -->
+        <div class="col-lg-2 col-lg-offset-1 centered">
+          <img src="assets/images/UBC.png" alt="UBC" width="130">
+        </div>
+        <div class="col-lg-5 col-lg-offset-1">
+          <p><t>Bachelor of Computer Science</t><br/>
+            University of British Columbia
+            <!--<br/><i>Extra info here</i>-->
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>Expected MAY 2020</sm><br/>
+          <imp><sm>IN PROGRESS</sm></imp>
+          </p>
+        </div>
+  
+        <!-- EDIT: education line 2 -->
+        <div class="col-lg-5 col-lg-offset-1">
+          <p><t>BSc. Microbiology & Immunology </t><br/>
+             University of British Columbia
+            <!--<br/><i>Extra info here</i>-->
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>MAY 2017</sm></p>
+        </div>
+  
+    </div><!--/.row -->
+    <br>
+    <hr>
+  </div><!--/Education container -->
 
-    <div class="parallax parallax-work-img">
-      <div class="section-header" id="work-header">
-        <div class="container">
-         <div class="row centered">
-           <div class="col-lg-12">
-              <h1>I work.</h1>
-              <h3>(But this is not an accurate representation of what work may look like every day.)</h3>
-            </div><!--/.col-lg-12-->
-          </div><!--/.row-->
-        </div><!--/.container-->
-      </div>
+  <!-- WORK SECTION -->
+  <section id="work" name="work"></section>
+
+  <div class="parallax parallax-work-img">
+    <div class="section-header" id="work-header">
+      <div class="container">
+       <div class="row centered">
+         <div class="col-lg-12">
+            <h1>I work.</h1>
+            <h3>(But this is not an accurate representation of what work may look like every day.)</h3>
+          </div><!--/.col-lg-12-->
+        </div><!--/.row-->
+      </div><!--/.container-->
     </div>
-    
-    <!-- WORK SECTION -->
-    <div class="container desc animated fadeInUp">
-      <div class="row">
+  </div>
+  
+  <div class="container desc animated fadeInUp">
+    <div class="row">
 
-          <div class="col-lg-1 col-lg-offset-1">
-            <h4>WORK</h4>
-          </div>
+        <div class="col-lg-12 centered">
+          <h2>WORK</h2>
+          <br/>
+        </div>
 
-          <div class="col-lg-2">
-            <a href="https://www.ubc.ca"><img src="images/UBC.png" alt="UBC" height="120"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>BCS Tutor / Teaching Assistant</t><br/>
-              University of British Columbia<br/>
-            </p>
-            <p><more>I'm currently a teaching assistant for the BCS Program at UBC.</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>NOVEMBER 2018 - PRESENT</sm></p>
-          </div>
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="https://www.ubc.ca"><img src="assets/images/UBC.png" alt="UBC" height="120"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>BCS Tutor / Teaching Assistant</t><br/>
+            University of British Columbia<br/>
+          </p>
+          <p><more>I'm currently a teaching assistant for the BCS Program at UBC.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>NOVEMBER 2018 - PRESENT</sm></p>
+        </div>
 
-          <!-- EDIT: work line 1 -->
-          <div class="col-lg-2 col-lg-offset-2">
-            <a href="https://www.ca.com/us.html"><img src="images/CA_Technologies_logo.png" alt="CA Technologies" width="120"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>Software Developer Co-op</t><br/>
-              CA Technologies<br/>
-            </p>
-            <p><more>I contributed to the API Plans feature of CA's API Developer Portal.</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>SEPTEMBER 2018 - NOVEMBER 2018</sm></p>
-          </div>
+        <!-- EDIT: work line 1 -->
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="https://www.ca.com/us.html"><img src="assets/images/CA_Technologies_logo.png" alt="CA Technologies" width="120"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>Software Developer Co-op</t><br/>
+            CA Technologies<br/>
+          </p>
+          <p><more>I contributed to the API Plans feature of CA's API Developer Portal.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>SEPTEMBER 2018 - NOVEMBER 2018</sm></p>
+        </div>
 
-          <!-- EDIT: work line 2-->
-          <div class="col-lg-2 col-lg-offset-2">
-            <a href="https://www.bcchr.ca/"><img src="images/BC_Childrens.jpg" alt="BC Children's Hospital" width="140"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>Research Assistant</t><br/>
-              BC Children's Hospital Research Institute<br/>
-            </p>
-            <p><more>For two summers, I researched childhood rheumatic diseases for the Pediatric Vasculitis Initiative (PedVas).</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>MAY 2017 - AUGUST 2017<br />
-            MAY 2016 - AUGUST 2016</sm></p>
-          </div>
+        <!-- EDIT: work line 2-->
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="https://www.bcchr.ca/"><img src="assets/images/BC_Childrens.jpg" alt="BC Children's Hospital" width="140"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>Research Assistant</t><br/>
+            BC Children's Hospital Research Institute<br/>
+          </p>
+          <p><more>For two summers, I researched childhood rheumatic diseases for the Pediatric Vasculitis Initiative (PedVas).</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>MAY 2017 - AUGUST 2017<br />
+          MAY 2016 - AUGUST 2016</sm></p>
+        </div>
 
-          <!-- EDIT: work line 3-->
-          <div class="col-lg-2 col-lg-offset-2">
-            <a href="http://www.agr.gc.ca/eng/home/?id=1395690825741"><img src="images/Government_of_Canada.png" alt="Government of Canada" width="140"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>Cereal Molecular Genetics Research Affiliate</t><br/>
-              Agriculture and Agri-Food Canada<br/>
-            </p>
-            <p><more>I helped investigate stress responses in keystone agricultural crops such as wheat and barley.</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>SEPTEMBER 2015 - DECEMBER 2015</sm></p>
-          </div>
+        <!-- EDIT: work line 3-->
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="http://www.agr.gc.ca/eng/home/?id=1395690825741"><img src="assets/images/Government_of_Canada.png" alt="Government of Canada" width="140"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>Cereal Molecular Genetics Research Affiliate</t><br/>
+            Agriculture and Agri-Food Canada<br/>
+          </p>
+          <p><more>I helped investigate stress responses in keystone agricultural crops such as wheat and barley.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>SEPTEMBER 2015 - DECEMBER 2015</sm></p>
+        </div>
 
-          <!-- EDIT: work line 4-->
-          <div class="col-lg-2 col-lg-offset-2">
-            <a href="http://kinexus.ca/"><img src="images/Kinexus.png" alt="Kinexus" width="150"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>Research Assistant</t><br/>
-              Kinexus Bioinformatics Corporation<br/>
-            </p>
-            <p><more>As a co-op student, I purified and validated antibodies for research and product development.</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>JANUARY 2015 - AUGUST 2015</sm></p>
-          </div>
-      </div><!--/.row -->
-      <br>
-      <hr>
-    </div><!--/Work container -->
+        <!-- EDIT: work line 4-->
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="http://kinexus.ca/"><img src="assets/images/Kinexus.png" alt="Kinexus" width="150"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>Research Assistant</t><br/>
+            Kinexus Bioinformatics Corporation<br/>
+          </p>
+          <p><more>As a co-op student, I purified and validated antibodies for research and product development.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>JANUARY 2015 - AUGUST 2015</sm></p>
+        </div>
+    </div><!--/.row -->
+    <br>
+    <hr>
+  </div><!--/Work container -->
 
-    <div class="parallax parallax-service-img">
-      <div class="section-header" id="service-header">
-        <div class="container">
-         <div class="row centered">
-           <div class="col-lg-12">
-              <h1>I volunteer.</h1>
-              <h3>(Don't worry, the coffee cups are empty.)</h3>
-            </div><!--/.col-lg-12-->
-          </div><!--/.row-->
-        </div><!--/.container-->
-      </div>
+  <!-- SERVICE SECTION -->
+  <section id="service" name="service"></section>
+
+  <div class="parallax parallax-service-img">
+    <div class="section-header" id="service-header">
+      <div class="container">
+       <div class="row centered">
+         <div class="col-lg-12">
+            <h1>I volunteer.</h1>
+            <h3>(Don't worry, the coffee cups beside the computer are empty.)</h3>
+          </div><!--/.col-lg-12-->
+        </div><!--/.row-->
+      </div><!--/.container-->
     </div>
+  </div>
 
-    <!-- SERVICE SECTION -->
-    <div class="container desc animated fadeInUp">
-      <div class="row">
+  <div class="container desc animated fadeInUp">
+    <div class="row">
 
-          <div class="col-lg-1 col-lg-offset-1">
-            <h4>SERVICE</h4>
-          </div>
+        <div class="col-lg-12 centered">
+          <h2>SERVICE</h2>
+          <br/>
+        </div>
 
-          <!-- EDIT: service line 1 -->
-          <div class="col-lg-2">
-            <a href="https://www.tenth.ca/"><img src="images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>Production Team Lead</t><br/>
-              Tenth Church<br/>
-            </p>
-            <p><more>I run production and sound for live events, give workshops, and mentor students in tech.</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>SEPTEMBER 2017 - PRESENT</sm></p>
-          </div>
+        <!-- EDIT: service line 1 -->
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="https://www.tenth.ca/"><img src="assets/images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>Production Team Lead</t><br/>
+            Tenth Church<br/>
+          </p>
+          <p><more>I run production and sound for live events, give workshops, and mentor students in tech.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>SEPTEMBER 2017 - PRESENT</sm></p>
+        </div>
 
-          <!-- EDIT: service line 2 -->
-          <div class="col-lg-2 col-lg-offset-2">
-            <a href="https://www.tenth.ca/"><img src="images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>Media Technician</t><br/>
-              Tenth Church<br/>
-            </p>
-            <p><more>I operate media on Sunday services, Christmas concerts, and special events around the city.</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>NOVEMBER 2012 - PRESENT</sm></p>
-          </div>
-          
-          <!-- EDIT: service line 3-->
-          <div class="col-lg-2 col-lg-offset-2">
-            <a href="http://www.kitshouse.org/"><img src="images/Kits_House.png" alt="Kitsilano Neighbourhood House" width="150"></a>
-          </div>
-          <div class="col-lg-5">
-            <p class="tight"><t>Neighbourhood Small Grants Resident's Advisory Committee Member</t><br/>
-              Kitsilano Neighbourhood House<br/>
-            </p>
-            <p><more>I worked with committee members to award small grants to hundreds of community projects around Vancouver.</more></p>
-          </div>
-          <div class="col-lg-3">
-            <p><sm>JANUARY 2011 - DECEMBER 2017</sm></p>
-          </div>
-      </div><!--/.row -->
-      <br>
-      <hr>
-    </div><!--/Service container -->
+        <!-- EDIT: service line 2 -->
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="https://www.tenth.ca/"><img src="assets/images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>Media Technician</t><br/>
+            Tenth Church<br/>
+          </p>
+          <p><more>I operate media on Sunday services, Christmas concerts, and special events around the city.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>NOVEMBER 2012 - PRESENT</sm></p>
+        </div>
+        
+        <!-- EDIT: service line 3-->
+        <div class="col-lg-2 col-lg-offset-2 centered">
+          <a href="http://www.kitshouse.org/"><img src="assets/images/Kits_House.png" alt="Kitsilano Neighbourhood House" width="150"></a>
+        </div>
+        <div class="col-lg-5">
+          <p class="tight"><t>Neighbourhood Small Grants Resident's Advisory Committee Member</t><br/>
+            Kitsilano Neighbourhood House<br/>
+          </p>
+          <p><more>I worked with committee members to award small grants to hundreds of community projects around Vancouver.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>JANUARY 2011 - DECEMBER 2017</sm></p>
+        </div>
+    </div><!--/.row -->
+    <br>
+    <hr>
+  </div><!--/Service container -->
 
-    <div class="parallax parallax-projects-img">
-      <div class="section-header" id="projects-header">
-        <div class="container">
-         <div class="row centered">
-           <div class="col-lg-12">
-              <h1>I do things in my spare time.</h1>
-              <h3>(When I have spare time.)</h3>
-            </div><!--/.col-lg-12-->
-          </div><!--/.row-->
-        </div><!--/.container-->
-      </div>
+  <!-- PROJECTS SECTION -->
+  <section id="projects" name="projects"></section>
+
+  <div class="parallax parallax-projects-img">
+    <div class="section-header" id="projects-header">
+      <div class="container">
+       <div class="row centered">
+         <div class="col-lg-12">
+            <h1>I do things in my spare time.</h1>
+            <h3>(When I have spare time.)</h3>
+          </div><!--/.col-lg-12-->
+        </div><!--/.row-->
+      </div><!--/.container-->
     </div>
+  </div>
 
-    <!-- PROJECTS SECTION -->
-    <div class="container desc animated fadeInUp">
-      <div class="row">
+  <div class="container desc animated fadeInUp">
+    <div class="row">
 
-          <div class="col-lg-1 col-lg-offset-1">
-            <h4>PROJECTS</h4>
-          </div>
+        <div class="col-lg-12 centered">
+          <h2>PROJECTS</h2>
+          <br/>
+        </div>
 
-          <!-- Research projects -->
-          <div class="col-lg-1 col-lg-offset-1">
-            <h5>RESEARCH</h5>
-          </div>
+        <!-- Research projects -->
+        <div class="col-lg-1 col-lg-offset-1">
+          <h5>RESEARCH</h5>
+        </div>
 
-          <!-- EDIT: Resarch Project 1 -->
-          <div class="col-lg-4">
-            <div class="w3-card w3-white">
-              <header class="w3-container w3-blue">
-                <h4>S100A12 ...</h4>
-              </header>
+        <!-- EDIT: Resarch Project 1 -->
+        <div class="col-lg-4">
+          <div class="w3-card w3-white">
+            <header class="w3-container w3-blue">
+              <h4>S100A12 ...</h4>
+            </header>
 
-              <div class="w3-container">
-                <p>Project description</p>
-              </div>
+            <div class="w3-container">
+              <p>Project description</p>
             </div>
           </div>
+        </div>
 
-          <!-- EDIT: Resarch Project 2 -->
-          <div class="col-lg-4">
-            <div class="w3-card w3-white">
-              <header class="w3-container w3-blue">
-                <h4>Escherichia coli ...</h4>
-              </header>
+        <!-- EDIT: Resarch Project 2 -->
+        <div class="col-lg-4">
+          <div class="w3-card w3-white">
+            <header class="w3-container w3-blue">
+              <h4>Escherichia coli ...</h4>
+            </header>
 
-              <div class="w3-container">
-                <p>Project description</p>
-              </div>
+            <div class="w3-container">
+              <p>Project description</p>
             </div>
           </div>
+        </div>
 
-          <!-- Personal projects -->
-          <div class="col-lg-1 col-lg-offset-3">
-            <h5>PERSONAL</h5>
-          </div>
+        <!-- Personal projects -->
+        <div class="col-lg-1 col-lg-offset-3">
+          <h5>PERSONAL</h5>
+        </div>
 
-          <!-- EDIT: Personal Project 1 -->
-          <div class="col-lg-4">
-            <div class="w3-card w3-white">
-              <header class="w3-container w3-blue">
-                <h4>NaloxZone ...</h4>
-              </header>
+        <!-- EDIT: Personal Project 1 -->
+        <div class="col-lg-4">
+          <div class="w3-card w3-white">
+            <header class="w3-container w3-blue">
+              <h4>NaloxZone ...</h4>
+            </header>
 
-              <div class="w3-container">
-                <p>Project description</p>
-              </div>
+            <div class="w3-container">
+              <p>Project description</p>
             </div>
           </div>
+        </div>
 
-          <!-- EDIT: Personal Project 2 -->
-          <div class="col-lg-4">
-            <div class="w3-card w3-white">
-              <header class="w3-container w3-blue">
-                <h4>ChemotaxSim ...</h4>
-              </header>
+        <!-- EDIT: Personal Project 2 -->
+        <div class="col-lg-4">
+          <div class="w3-card w3-white">
+            <header class="w3-container w3-blue">
+              <h4>ChemotaxSim ...</h4>
+            </header>
 
-              <div class="w3-container">
-                <p>Project description</p>
-              </div>
+            <div class="w3-container">
+              <p>Project description</p>
             </div>
           </div>
+        </div>
 
-          <!-- Academic projects -->
-          <div class="col-lg-1 col-lg-offset-3">
-            <h5>ACADEMIC</h5>
-          </div>
+        <!-- Academic projects -->
+        <div class="col-lg-1 col-lg-offset-3">
+          <h5>ACADEMIC</h5>
+        </div>
 
-          <!-- EDIT: Academic Project 1 -->
-          <div class="col-lg-4">
-            <div class="w3-card w3-white">
-              <header class="w3-container w3-blue">
-                <h4>insightUBC ...</h4>
-              </header>
+        <!-- EDIT: Academic Project 1 -->
+        <div class="col-lg-4">
+          <div class="w3-card w3-white">
+            <header class="w3-container w3-blue">
+              <h4>insightUBC ...</h4>
+            </header>
 
-              <div class="w3-container">
-                <p>Project description</p>
-              </div>
+            <div class="w3-container">
+              <p>Project description</p>
             </div>
           </div>
+        </div>
 
-          <!-- EDIT: Personal Project 2 -->
-          <div class="col-lg-4">
-            <div class="w3-card w3-white">
-              <header class="w3-container w3-blue">
-                <h4>Buses Are Us ...</h4>
-              </header>
+        <!-- EDIT: Personal Project 2 -->
+        <div class="col-lg-4">
+          <div class="w3-card w3-white">
+            <header class="w3-container w3-blue">
+              <h4>Buses Are Us ...</h4>
+            </header>
 
-              <div class="w3-container">
-                <p>Project description</p>
-              </div>
+            <div class="w3-container">
+              <p>Project description</p>
             </div>
           </div>
+        </div>
 
-      </div><!--/.row -->
-      <br>
-      <hr>
-    </div><!--/Projects container -->
+    </div><!--/.row -->
+    <br>
+    <hr>
+  </div><!--/Projects container -->
 
 </body>
 

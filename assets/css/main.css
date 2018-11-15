@@ -63,6 +63,32 @@ a:after {
   padding: 0;
 }
 
+/* ---------------------------------------------- /*
+ * PRELOADER ANIMATION
+/* ---------------------------------------------- */
+
+#preloader {
+  background: #FFF;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+#status {
+  background-image: url(../images/status.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+}
+
 /*---------------------------------------------------
   SECTION WRAPS
 ---------------------------------------------------*/
@@ -70,7 +96,7 @@ a:after {
 /* Header Wrap */
 .header {
   background: #1CBCAD;
-  background: url(../../images/Fuji-Header.jpg) no-repeat center top;
+  background: url(../images/Fuji-Header.jpg) no-repeat center top;
   padding-top:140px;
   text-align:center;
   background-attachment: relative;
@@ -151,13 +177,13 @@ a:after {
 
 /* About Wrap */
 .about {
-  background: #2c3e50;
+  background: #2c503e;
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
 } 
 
-.about h4, p {
+.about h2, p {
   color: white;
 }
 
@@ -203,14 +229,14 @@ a:after {
 }
 
 .desc t {
-  color: #34495e;
+  color: #2c503e;
   font-weight: 700;
 }
 
 .desc imp {
   padding: 6px;
   color: white;
-  background: #34495e;
+  background: #2c503e;
 }
 
 .desc more {
@@ -372,15 +398,15 @@ body {
 
 .parallax-work-img {
   /* The image used */
-  background-image: url("../../images/Work-Header.jpg");
+  background-image: url("../images/Work-Header.jpg");
 }
 
 .parallax-service-img {
   /* The image used */
-  background-image: url("../../images/Service-Header.jpg");
+  background-image: url("../images/Service-Header.jpg");
 }
 
 .parallax-projects-img {
   /* The image used */
-  background-image: url("../../images/Projects-Header.jpg");
+  background-image: url("../images/Projects-Header.jpg");
 }
