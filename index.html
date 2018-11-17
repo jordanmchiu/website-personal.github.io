@@ -12,42 +12,39 @@
   <meta name="copyright" content="2018 Jordan Chiu">
   <title>Website</title>
 
+  <!-- Misc CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/w3.css" rel="stylesheet">
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- Link the main and custom .css stylesheets -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+  
+  <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
+  <link href='https://fonts.googleapis.com/css?family=Lora|Oswald' rel='stylesheet' type='text/css'>
 
-    <!-- W3 core CSS -->
-    <link href="assets/css/w3.css" rel="stylesheet">
+  <!-- Load jQuery before other js files -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
 
-    <!-- Link the main.css stylesheet -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-    <link href='https://fonts.googleapis.com/css?family=Lora|Oswald' rel='stylesheet' type='text/css'>
+  <!-- Load other js files -->
+  <script src="assets/js/custom.js"></script>
 
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
 
-    <link href="assets/css/animate.css" rel="stylesheet">
-
-    <!-- Load jQuery before other js files -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-
-    <script src="assets/js/custom.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="manifest" href="assets/images/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+  <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
  </head>
  <body>
@@ -62,7 +59,7 @@
          <div class="col-lg-12">
            <h1>Jordan Chiu</h1>
            <h3>Student, Microbioligist & Immunologist, Software Developer | 
-            <a href="mailto:jordanmchiu@gmail.com">jordanmchiu@gmail.com</a>
+            <a target="_blank" href="mailto:jordanmchiu@gmail.com">jordanmchiu@gmail.com</a>
            </h3>
          </div><!--/.col-lg-12-->
        </div><!--/.row-->
@@ -84,17 +81,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#home">Alfred Sin</a>
+          <a target="_blank" class="navbar-brand" href="#home">Alfred Sin</a>
         </div>
 
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a target="_blank" href="#about">About</a></li>
+                        <li><a target="_blank" href="#skills">Skills</a></li>
+                        <li><a target="_blank" href="#projects">Projects</a></li>
+            <li><a target="_blank" href="#experience">Experience</a></li>
+                        <li><a target="_blank" href="#education">Education</a></li>
+            <li><a target="_blank" href="#contact">Contact</a></li>
           </ul>
         </div>
 
@@ -116,14 +113,83 @@
            </div>
            <br/>
            <div class="col-lg-8 col-lg-offset-1">
-            <p>Hello!  I'm a student pursuing a second degree in Computer Science.  My goal is to integrate my skills in software development with my first passion, health sciences.<br/><br/>
+            <p>Hello!  I'm a student pursuing a second degree in Computer Science.  My goal is to integrate my skills in software development with my first passion, health sciences.<br><br>
             I live in Vancouver, BC, which means that I'm used to the rain, I love watching hockey, and I enjoy spending my time outdoors... when I'm not confined to the indoors by said rain.</p>
            </div>
            <div class="col-lg-3">
-             <p><a href="assets/files/Resume.pdf"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
+             <p><a target="_blank" href="assets/files/Resume.pdf"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
            </div>
      
          </div><!--/.row-->
+
+        <hr>
+        <section id="skills" name="skills"></section>
+
+        <div class="col-lg-12 centered">
+          <h3>TECHNICAL SKILLS</h3>
+        </div>
+
+        <div class="row"> 
+          <div class="col-lg-3 col-lg-offset-1">
+              <p>I'm competent in:</p>
+              <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>TypeScript</li>
+                <li>C/C++</li>
+                <li>Git/GitHub</li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-lg-offset-1">
+              <p>I'm developing my skills in:</p>
+              <ul>
+                <li>SQL</li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-lg-offset-1">
+              <p>I'd like to learn more about:</p>
+              <ul>
+                <li>R</li>
+                <li>Python</li>
+                <li>PHP</li>
+              </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="col-lg-12 centered">
+          <h3>LAB TECHNIQUES</h3>
+        </div>
+
+        <div class="row"> 
+          <div class="col-lg-3 col-lg-offset-1">
+              <ul>
+                <li>SDS-PAGE</li>
+                <li>DNA and RNA isolation</li>
+                <li>Mammalian cell culture</li>
+                <li>ELISA</li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-lg-offset-1">
+              <ul>
+                <li>Bacterial cell culture</li>
+                <li>Gram stains and microscopy</li>
+                <li>Bacteriophage propagation</li>
+                <li>PCR, RT-qPCR</li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-lg-offset-1">
+              <ul>
+                <li>Flow cytometry</li>
+                <li>Plaque assays</li>
+                <li>Yeast-2-hybrid assays</li>
+                <li>Western blotting and ECL</li>
+              </ul>
+          </div>
+        </div>
+
        </div><!--/.container-->
  </div><!--/ #intro-->
 
@@ -157,7 +223,7 @@
         <div class="col-lg-5 col-lg-offset-1">
           <p><t>BSc. Microbiology & Immunology </t><br/>
              University of British Columbia
-            <!--<br/><i>Extra info here</i>-->
+            <br/><i>Cumulative average: 90%</i>
           </p>
         </div>
         <div class="col-lg-3">
@@ -166,7 +232,6 @@
   
     </div><!--/.row -->
     <br>
-    <hr>
   </div><!--/Education container -->
 
   <!-- WORK SECTION -->
@@ -193,149 +258,84 @@
           <br/>
         </div>
 
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="https://www.ubc.ca"><img src="assets/images/UBC.png" alt="UBC" height="120"></a>
-        </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>BCS Tutor / Teaching Assistant</t><br/>
-            University of British Columbia<br/>
-          </p>
-          <p><more>I'm currently a teaching assistant for the BCS Program at UBC.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>NOVEMBER 2018 - PRESENT</sm></p>
-        </div>
-
-        <!-- EDIT: work line 1 -->
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="https://www.ca.com/us.html"><img src="assets/images/CA_Technologies_logo.png" alt="CA Technologies" width="120"></a>
-        </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>Software Developer Co-op</t><br/>
-            CA Technologies<br/>
-          </p>
-          <p><more>I contributed to the API Plans feature of CA's API Developer Portal.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2018 - NOVEMBER 2018</sm></p>
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="https://www.ubc.ca"><img src="assets/images/UBC.png" alt="UBC" height="120"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>BCS Tutor / Teaching Assistant</t><br/>
+              University of British Columbia<br/>
+            </p>
+            <p><more>I'm currently a teaching assistant for the BCS Program at UBC.  I hold open office hours, host review sessions, and give assistance on a variety of lower- and upper-year computer science courses.</more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>NOVEMBER 2018 - PRESENT</sm></p>
+          </div>
         </div>
 
-        <!-- EDIT: work line 2-->
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="https://www.bcchr.ca/"><img src="assets/images/BC_Childrens.jpg" alt="BC Children's Hospital" width="140"></a>
-        </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>Research Assistant</t><br/>
-            BC Children's Hospital Research Institute<br/>
-          </p>
-          <p><more>For two summers, I researched childhood rheumatic diseases for the Pediatric Vasculitis Initiative (PedVas).</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>MAY 2017 - AUGUST 2017<br />
-          MAY 2016 - AUGUST 2016</sm></p>
-        </div>
-
-        <!-- EDIT: work line 3-->
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="http://www.agr.gc.ca/eng/home/?id=1395690825741"><img src="assets/images/Government_of_Canada.png" alt="Government of Canada" width="140"></a>
-        </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>Cereal Molecular Genetics Research Affiliate</t><br/>
-            Agriculture and Agri-Food Canada<br/>
-          </p>
-          <p><more>I helped investigate stress responses in keystone agricultural crops such as wheat and barley.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2015 - DECEMBER 2015</sm></p>
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="https://www.ca.com/us.html"><img src="assets/images/CA_Technologies_logo.png" alt="CA Technologies" width="120"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>Software Developer Co-op</t><br/>
+              CA Technologies<br/>
+            </p>
+            <p><more>I contributed to the new API Plans feature of CA's API Developer Portal, allowing administrators more granular control over access to their APIs.<br><br>I experienced front-end development <span class="highlight">(BackboneJS, HTML, CSS, Javascript)</span>, back-end development <span class="highlight">(Java, Maven)</span>, and deployment <span class="highlight">(Docker, OpenShift, Kubernetes)</span>. </more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>SEPTEMBER 2018 - NOVEMBER 2018</sm></p>
+          </div>
         </div>
 
-        <!-- EDIT: work line 4-->
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="http://kinexus.ca/"><img src="assets/images/Kinexus.png" alt="Kinexus" width="150"></a>
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="https://www.bcchr.ca/"><img src="assets/images/BC_Childrens.jpg" alt="BC Children's Hospital" width="140"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>Research Assistant</t><br/>
+              BC Children's Hospital Research Institute<br/>
+            </p>
+            <p><more>For two summers, I researched childhood rheumatic diseases for the Pediatric Vasculitis Initiative (PedVas).</more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>MAY 2017 - AUGUST 2017<br />
+            MAY 2016 - AUGUST 2016</sm></p>
+          </div>
         </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>Research Assistant</t><br/>
-            Kinexus Bioinformatics Corporation<br/>
-          </p>
-          <p><more>As a co-op student, I purified and validated antibodies for research and product development.</more></p>
+
+       <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="http://www.agr.gc.ca/eng/home/?id=1395690825741"><img src="assets/images/Government_of_Canada.png" alt="Government of Canada" width="140"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>Cereal Molecular Genetics Research Affiliate</t><br/>
+              Agriculture and Agri-Food Canada<br/>
+            </p>
+            <p><more>I helped investigate stress responses in keystone agricultural crops such as wheat and barley.  I planned and executed time-sensitive experiments independently.</more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>SEPTEMBER 2015 - DECEMBER 2015</sm></p>
+          </div>
         </div>
-        <div class="col-lg-3">
-          <p><sm>JANUARY 2015 - AUGUST 2015</sm></p>
+
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="http://kinexus.ca/"><img src="assets/images/Kinexus.png" alt="Kinexus" width="150"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>Research Assistant</t><br/>
+              Kinexus Bioinformatics Corporation<br/>
+            </p>
+            <p><more>As a co-op student, I purified and validated antibodies for research and product development.  I also helped facilitate transitions between co-ops by teaching new students lab procedures and practices.</more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>JANUARY 2015 - AUGUST 2015</sm></p>
+          </div>
         </div>
     </div><!--/.row -->
     <br>
-    <hr>
   </div><!--/Work container -->
-
-  <!-- SERVICE SECTION -->
-  <section id="service" name="service"></section>
-
-  <div class="parallax parallax-service-img">
-    <div class="section-header" id="service-header">
-      <div class="container">
-       <div class="row centered">
-         <div class="col-lg-12">
-            <h1>I volunteer.</h1>
-            <h3>(Don't worry, the coffee cups beside the computer are empty.)</h3>
-          </div><!--/.col-lg-12-->
-        </div><!--/.row-->
-      </div><!--/.container-->
-    </div>
-  </div>
-
-  <div class="container desc animated fadeInUp">
-    <div class="row">
-
-        <div class="col-lg-12 centered">
-          <h2>SERVICE</h2>
-          <br/>
-        </div>
-
-        <!-- EDIT: service line 1 -->
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="https://www.tenth.ca/"><img src="assets/images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
-        </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>Production Team Lead</t><br/>
-            Tenth Church<br/>
-          </p>
-          <p><more>I run production and sound for live events, give workshops, and mentor students in tech.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2017 - PRESENT</sm></p>
-        </div>
-
-        <!-- EDIT: service line 2 -->
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="https://www.tenth.ca/"><img src="assets/images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
-        </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>Media Technician</t><br/>
-            Tenth Church<br/>
-          </p>
-          <p><more>I operate media on Sunday services, Christmas concerts, and special events around the city.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>NOVEMBER 2012 - PRESENT</sm></p>
-        </div>
-        
-        <!-- EDIT: service line 3-->
-        <div class="col-lg-2 col-lg-offset-2 centered">
-          <a href="http://www.kitshouse.org/"><img src="assets/images/Kits_House.png" alt="Kitsilano Neighbourhood House" width="150"></a>
-        </div>
-        <div class="col-lg-5">
-          <p class="tight"><t>Neighbourhood Small Grants Resident's Advisory Committee Member</t><br/>
-            Kitsilano Neighbourhood House<br/>
-          </p>
-          <p><more>I worked with committee members to award small grants to hundreds of community projects around Vancouver.</more></p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JANUARY 2011 - DECEMBER 2017</sm></p>
-        </div>
-    </div><!--/.row -->
-    <br>
-    <hr>
-  </div><!--/Service container -->
 
   <!-- PROJECTS SECTION -->
   <section id="projects" name="projects"></section>
@@ -367,97 +367,221 @@
         </div>
 
         <!-- EDIT: Resarch Project 1 -->
-        <div class="col-lg-4">
-          <div class="w3-card w3-white">
-            <header class="w3-container w3-blue">
-              <h4>S100A12 ...</h4>
-            </header>
+        <div class="col-lg-4 col-lg-offset-1 card-container">
+          <a target="_blank" href="assets/files/CBR-Poster-FINAL.pdf">
+            <div class="w3-card w3-white">
+              <header class="w3-container card-header">
+                <h4>Examining a role for S100A12 in vascular inflammation</h4>
+              </header>
 
-            <div class="w3-container">
-              <p>Project description</p>
+              <div class="w3-container">
+                <p>At BC Children's Hospital Research Institute, I worked to show that the protein S100A12 may be an indirect indicator of inflammation in primary vasculitis. <br><br>
+                My findings were presented at the annual <u>CBR (Centre for Blood Research) Research Day</u> in 2017. <i class="icon-external-link"></i></p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <!-- EDIT: Resarch Project 2 -->
-        <div class="col-lg-4">
-          <div class="w3-card w3-white">
-            <header class="w3-container w3-blue">
-              <h4>Escherichia coli ...</h4>
-            </header>
+        <div class="col-lg-4 col-lg-offset-1 card-container">
+          <a target="_blank" href="https://jemi.microbiology.ubc.ca/sites/default/files/Chiu%20et%20al%20JEMI%2B%20Vol%203%20pg%2038-44.pdf">
+            <div class="w3-card w3-white">
+              <header class="w3-container card-header">
+                <h4><i>Escherichia coli</i> O Antigen Serotype O16 Is a Restriction Factor for Bacteriophage T4 Infection</h4>
+              </header>
 
-            <div class="w3-container">
-              <p>Project description</p>
+              <div class="w3-container">
+                <p>I worked with a team to demonstrate for the first time that O antigen, a ubiquitous bacterial polysaccharide, prevented infection by bacteriophage T4.<br><br>
+                Our findings were published in the <u>Journal of Experimental Microbiology & Immunology+ (JEMI+)</u>, UBC's undergraduate research journal. <i class="icon-external-link"></i></p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
+      </div>
+
+      <hr>
+
+      <div class="row">
+
         <!-- Personal projects -->
-        <div class="col-lg-1 col-lg-offset-3">
+        <div class="col-lg-1 col-lg-offset-1">
           <h5>PERSONAL</h5>
         </div>
 
         <!-- EDIT: Personal Project 1 -->
-        <div class="col-lg-4">
-          <div class="w3-card w3-white">
-            <header class="w3-container w3-blue">
-              <h4>NaloxZone ...</h4>
-            </header>
+        <div class="col-lg-4 col-lg-offset-1 card-container">
+          <a target="_blank" href="https://github.com/jordanmchiu/NaloxZone">
+            <div class="w3-card w3-white">
+              <header class="w3-container card-header">
+                <h4>NaloxZone</h4>
+              </header>
 
-            <div class="w3-container">
-              <p>Project description</p>
+              <div class="w3-container">
+                <p><strong>TypeScript, ReactJS, Node, Google Maps Platform</strong><br><br>
+                  Web app to display all pharmacies in Vancouver carrying Naloxone and providing overdose response training, with data from the BC Ministry of Mental Health and Addictions.<br><br>
+                  GitHub page: <i class="icon-external-link"></i>
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <!-- EDIT: Personal Project 2 -->
-        <div class="col-lg-4">
-          <div class="w3-card w3-white">
-            <header class="w3-container w3-blue">
-              <h4>ChemotaxSim ...</h4>
-            </header>
+        <div class="col-lg-4 col-lg-offset-1 card-container">
+          <a target="_blank" href="https://github.com/jordanmchiu/ChemotaxSim">
+            <div class="w3-card w3-white">
+              <header class="w3-container card-header">
+                <h4>ChemotaxSim</h4>
+              </header>
 
-            <div class="w3-container">
-              <p>Project description</p>
+              <div class="w3-container">
+                <p><strong>Java (JFrame, JPanel, Graphics2D)</strong><br><br>
+                  An interactive simulator for movement of bacteria to favourable environments.  Designed as an introductory demo or teaching tool for those new to the concept of chemotaxis, integrating life sciences and computer science.<br><br>
+                  GitHub page: <i class="icon-external-link"></i>
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
+        <!-- EDIT: Personal Project 2 -->
+        <div class="col-lg-4 col-lg-offset-3 card-container">
+          <a target="_blank" href="https://github.com/jordanmchiu/bcs-hacks-2018">
+            <div class="w3-card w3-white">
+              <header class="w3-container card-header">
+                <h4>Roomtific</h4>
+              </header>
+
+              <div class="w3-container">
+                <p><strong>TypeScript, Javscript, ReactJS, Google Maps Platform</strong><br><br>
+                  Project description<br><br>
+                  GitHub page: <i class="icon-external-link"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+
         <!-- Academic projects -->
-        <div class="col-lg-1 col-lg-offset-3">
+        <div class="col-lg-1 col-lg-offset-1">
           <h5>ACADEMIC</h5>
         </div>
 
         <!-- EDIT: Academic Project 1 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-lg-offset-1 card-container">
           <div class="w3-card w3-white">
-            <header class="w3-container w3-blue">
-              <h4>insightUBC ...</h4>
+            <header class="w3-container card-header">
+              <h4>insightUBC</h4>
             </header>
 
             <div class="w3-container">
-              <p>Project description</p>
+              <p><strong>TypeScript, Mocha/Karma, REST development, HTML, JSON</strong><br><br>
+                I worked with a partner on a full-stack web development project to allow querying of metadata from around UBC campus, including information about courses and buildings.<br><br>
+                (Link unavailable, sorry!)
+              </p>
             </div>
           </div>
         </div>
 
         <!-- EDIT: Personal Project 2 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-lg-offset-1 card-container">
           <div class="w3-card w3-white">
-            <header class="w3-container w3-blue">
-              <h4>Buses Are Us ...</h4>
+            <header class="w3-container card-header">
+              <h4>Buses Are Us</h4>
             </header>
 
             <div class="w3-container">
-              <p>Project description</p>
+              <p><strong>Java, JUnit, Genymotion Android Emulator</strong><br><br>
+                I extended a partially completed Java application that provides real-time bus information on the Greater Vancouver Transit system (Translink) with Translink’s Open API.<br><br>
+                (Link unavailable, sorry!)
+              </p>
             </div>
           </div>
         </div>
 
     </div><!--/.row -->
     <br>
-    <hr>
   </div><!--/Projects container -->
+
+  <!-- SERVICE SECTION -->
+  <section id="service" name="service"></section>
+
+  <div class="parallax parallax-service-img">
+    <div class="section-header" id="service-header">
+      <div class="container">
+       <div class="row centered">
+         <div class="col-lg-12">
+            <h1>I volunteer.</h1>
+            <h3>(Don't worry, the coffee cups beside the computer are empty.)</h3>
+          </div><!--/.col-lg-12-->
+        </div><!--/.row-->
+      </div><!--/.container-->
+    </div>
+  </div>
+
+  <div class="container desc animated fadeInUp">
+    <div class="row">
+
+        <div class="col-lg-12 centered">
+          <h2>SERVICE</h2>
+          <br/>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="https://www.tenth.ca/"><img src="assets/images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>Production Team Lead</t><br/>
+              Tenth Church<br/>
+            </p>
+            <p><more>I run production and sound for live events, give workshops, and mentor students in tech.</more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>SEPTEMBER 2017 - PRESENT</sm></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="https://www.tenth.ca/"><img src="assets/images/Tenth_Church.jpg" alt="Tenth Church" width="150"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>Media Technician</t><br/>
+              Tenth Church<br/>
+            </p>
+            <p><more>I operate media on Sunday services, Christmas concerts, and special events around the city.</more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>NOVEMBER 2012 - PRESENT</sm></p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 centered">
+            <a target="_blank" href="http://www.kitshouse.org/"><img src="assets/images/Kits_House.png" alt="Kitsilano Neighbourhood House" width="150"></a>
+          </div>
+          <div class="col-lg-5 col-lg-offset-1">
+            <p class="tight"><t>Neighbourhood Small Grants Resident's Advisory Committee Member</t><br/>
+              Kitsilano Neighbourhood House<br/>
+            </p>
+            <p><more>I worked with committee members to award small grants to hundreds of community projects around Vancouver.</more></p>
+          </div>
+          <div class="col-lg-3">
+            <p><sm>JANUARY 2011 - DECEMBER 2017</sm></p>
+          </div>
+        </div>
+    </div><!--/.row -->
+    <br>
+  </div><!--/Service container -->
+
+  
 
 </body>
 
@@ -474,15 +598,15 @@
         <!-- EDIT: email -->
         <div class="col-lg-6">
           <p><t>EMAIL</t><br/>
-            <a href="mailto:jordanmchiu@gmail.com" class="mail">jordanmchiu@gmail.com</a> <br/>
+            <a target="_blank" href="mailto:jordanmchiu@gmail.com" class="mail">jordanmchiu@gmail.com</a> <br/>
           </p>
         </div>
         <div class="col-lg-3">
           <p><t>SOCIAL LINKS</t>
             <br/>
-            <a href="https://www.linkedin.com/in/jordan-chiu-802895125/"><i class="icon-linkedin"></i></a>
-            <a href="https://github.com/jordanmchiu"><i class="icon-github"></i></a>
-            <a href="https://www.facebook.com/cruzdbluz"><i class="icon-facebook"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jordan-chiu-802895125/"><i class="icon-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/jordanmchiu"><i class="icon-github"></i></a>
+            <a target="_blank" href="https://www.facebook.com/cruzdbluz"><i class="icon-facebook"></i></a>
           </p>
         </div>
       </div><!--/.row -->

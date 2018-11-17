@@ -63,32 +63,6 @@ a:after {
   padding: 0;
 }
 
-/* ---------------------------------------------- /*
- * PRELOADER ANIMATION
-/* ---------------------------------------------- */
-
-#preloader {
-  background: #FFF;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 9999;
-}
-
-#status {
-  background-image: url(../images/status.gif);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
-  left: 50%;
-  margin: -100px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  width: 200px;
-}
-
 /*---------------------------------------------------
   SECTION WRAPS
 ---------------------------------------------------*/
@@ -162,19 +136,6 @@ a:after {
   color: white;
 }
 
-/* Hook up images to hover effects */
-.parallax-work-img:hover #work-header {
-    opacity: 1.0;
-}
-
-.parallax-service-img:hover #service-header {
-    opacity: 1.0;
-}
-
-.parallax-projects-img:hover #projects-header {
-    opacity: 1.0;
-}
-
 /* About Wrap */
 .about {
   background: #2c503e;
@@ -183,7 +144,7 @@ a:after {
   color: white;
 } 
 
-.about h2, p {
+.about h2, h3, p {
   color: white;
 }
 
@@ -215,7 +176,7 @@ a:after {
 /* social icons: */
 .footer i {
   padding-right: 8px;
-  /*color: #1abc9c;*/
+  /* color: #1abc9c; */
 }
 
 /* Global Values */
@@ -375,38 +336,3 @@ body {
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
   }
-
-/* Parallax for images */
-.parallax {
-  /* Set a specific height */
-  height: 400px;
-  width: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-
-.parallax-work-img {
-  /* The image used */
-  background-image: url("../images/Work-Header.jpg");
-}
-
-.parallax-service-img {
-  /* The image used */
-  background-image: url("../images/Service-Header.jpg");
-}
-
-.parallax-projects-img {
-  /* The image used */
-  background-image: url("../images/Projects-Header.jpg");
-}
