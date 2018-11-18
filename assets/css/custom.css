@@ -1,0 +1,173 @@
+/* ---------------------------------------------- /*
+ * PRELOADER ANIMATION
+/* ---------------------------------------------- */
+
+#preloader {
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+#status {
+  background-image: url(../images/status.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+}
+
+/* ---------------------------------------------- /*
+ * PROJECT TILES/CARDS
+/* ---------------------------------------------- */
+
+.card-header {
+  background: linear-gradient(to right, #2c503e 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .25s ease-out;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #2c503e;
+}
+
+.card-header h4 {
+  transition: all .25s ease-out;
+}
+
+.card-body {
+  background: #f0f0f0;
+}
+
+.w3-card:hover .card-header {
+  background-position: left bottom;
+}
+
+.w3-card:hover .card-header h4 {
+  color: white;
+  transition: all .25s ease-out;
+}
+
+.w3-card:hover .w3-container p {
+  color: #1abc9c;
+  transition: all .25s ease-out;
+}
+
+.w3-card p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all .25s ease-out;
+}
+
+.card-container {
+  padding-bottom: 25px;
+}
+
+/* ---------------------------------------------- /*
+ * VARIOUS TYPOGRAPHY ENHANCEMENTS
+/* ---------------------------------------------- */
+
+.row .highlight {
+  color: #555555;
+  transition: all .15s ease-out;
+}
+
+.row:hover .highlight {
+  color: #1abc9c;
+  transition: all .15s ease-out;
+}
+
+/* ---------------------------------------------- /*
+ * IMAGE PARALLAX
+/* ---------------------------------------------- */
+
+.parallax {
+  /* Set a specific height */
+  height: 400px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Hook up images to hover effects */
+.parallax-work-img:hover #work-header {
+    opacity: 1.0;
+}
+
+.parallax-service-img:hover #service-header {
+    opacity: 1.0;
+}
+
+.parallax-projects-img:hover #projects-header {
+    opacity: 1.0;
+}
+
+.parallax-hobbies-img:hover #hobbies-header {
+    opacity: 1.0;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.parallax-work-img {
+  /* The image used */
+  background-image: url("../images/Work-Header.jpg");
+  background-position: left;
+}
+
+.parallax-service-img {
+  /* The image used */
+  background-image: url("../images/Service-Header.jpg");
+  background-position: center;
+}
+
+.parallax-projects-img {
+  /* The image used */
+  background-image: url("../images/Projects-Header.jpg");
+  background-position: left;
+}
+
+.parallax-hobbies-img {
+  /* The image used */
+  background-image: url("../images/Hobbies-Header.jpg");
+  background-position: left;
+}
+
+/* ---------------------------------------------- /*
+ * HOBBY ICONS
+/* ---------------------------------------------- */
+
+.hobby-icon {
+  color: #555555;
+  transition: all .15s ease-out;
+}
+
+.hobby-sub:hover .hobby-icon {
+  color: #1abc9c;
+  transition: all .15s ease-out;
+}
+
+.hobby-card {
+  text-transform: none;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px;
+}
