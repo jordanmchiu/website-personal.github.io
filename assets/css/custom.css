@@ -176,6 +176,13 @@
  * NAVIGATION
 /* ---------------------------------------------- */
 
+.header {
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+  width: 100%;
+  z-index: 998 !important;
+}
+
 .navbar a {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
