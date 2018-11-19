@@ -68,7 +68,7 @@ a:after {
 ---------------------------------------------------*/
 
 /* Header Wrap */
-.header {
+.home {
   background: #1CBCAD;
   background: url(../images/Fuji-Header.jpg) no-repeat center top;
   padding-top:140px;
@@ -89,18 +89,18 @@ a:after {
   background-size: cover;
 }
 
-.header h1 {
+.home h1 {
   font-size: 80px;
   color: white;
   background: rgba(0,0,0,0.2);
 }
 
-.header h3 {
+.home h3 {
   font-size: 20px;
   color: white;
 }
 
-.header h3 a {
+.home h3 a {
   color: #fff;
 }
 
