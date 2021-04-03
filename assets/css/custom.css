@@ -132,6 +132,12 @@
   background-position: left;
 }
 
+.parallax-education-img {
+  /* The image used */
+  background-image: url("../images/Work-Header.jpg");
+  background-position: left;
+}
+
 .parallax-service-img {
   /* The image used */
   background-image: url("../images/Service-Header.jpg");
